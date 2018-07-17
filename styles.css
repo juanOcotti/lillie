@@ -177,7 +177,7 @@ section {
   top: 0; 
  left: 0;
  background-position: center;   
-   background-size: cover; 
+   /* background-size: cover; */ 
   z-index: 1;  }  
 
 /* insert h1 in container -text bkgd scroll*/
