@@ -168,7 +168,7 @@ section {
 .bg-img::before {   
  background-image: url(h2o480.png);
  background-attachment: fixed; 
-  background-repeat: no-repeat; 
+  /* background-repeat: no-repeat; */ 
   /* position: fixed; */  /* this img with text everything on one plane */
   content: ' ';
   display: inline-block; 
