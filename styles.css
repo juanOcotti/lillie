@@ -175,9 +175,10 @@ section {
  /* background-image: url(h2o480.png); */
  
  /* background-attachment: fixed;  */
+  content: url(h2o480.png);
   background-repeat: no-repeat;  
   position: absolute;   /* this img with text everything on one plane */
-  content: url(h2o480.png);
+  
   display: block; 
   width: 100vw;
   min-height: 100vh;  
