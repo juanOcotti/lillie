@@ -156,42 +156,48 @@ body {
 /* mult fixed bg on mobile pen by kerry ruddock */
 /* NEW BELOW*/
 article {
-  position: relative;
+  /* position: relative; */
   font-size: 1em; }
 
 
 section {
+ /*  position: relative;
+ height: 100vh;
+ width: 100vw; */
+}
+
+.bg-img {
+  position: relative;
   height: 100vh;
   width: 100vw;
 }
-
 .bg-img::before {   
- background-image: url(h2o480.png);
+ /* background-image: url(h2o480.png); */
  
  /* background-attachment: fixed;  */
   background-repeat: no-repeat;  
-  position: sticky;   /* this img with text everything on one plane */
-  content: ' ';
-  display: inline-block; 
+  position: absolute;   /* this img with text everything on one plane */
+  content: url(h2o480.png);
+  display: block; 
   width: 100vw;
   min-height: 100vh;  
   top: 0; 
  left: 0;
- background-position: center;   
+ /* background-position: center; */   
    /* background-size: cover; */ 
   z-index: -1;  }  
 
 /* insert h1 in container -text bkgd scroll*/
 .bg-img::before {
  
-  content: 'Background scroll';
+  content: 'Foreground scroll';
   display: block;
- 
+  position: absolute;
   font-size: 5rem;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-style: italic;
-  z-index: 2;  }
+  z-index: 1;  }
 
 /* this works for img plcment too
  .bg-img1::after {
